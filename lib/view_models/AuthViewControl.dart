@@ -8,7 +8,7 @@ import 'dart:convert';
 class AuthViewController extends StateNotifier {
   AuthViewController(state) : super(state);
   Future login(String email,String password) async {
-     var  response = await http.post(Uri.parse('https://jivandeep-crud.herokuapp.com/api-auth/login'),body:{
+     var  response = await http.post(Uri.parse(''),body:{
         'email':email,
         'password':password
      });
